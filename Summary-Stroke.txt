@@ -1,0 +1,66 @@
+LgEval Evaluation Summary
+Fri May  4 16:52:42 2018
+
+Output File Directory:  Parsing-Project/TestTest/PredictedTestLG_Strokes/
+Ground Truth Directory: Parsing-Project/TestTest/TestTestLG_Stroke/
+
+****  PRIMITIVES   **************************************************************
+
+  Directed   Rate(%)     Total   Correct    Errors    SegErr     ClErr    RelErr
+---------------------------------------------------------------------------------
+     Nodes     65.80     38181     25125     13056
+     Edges     93.81    763826    716564     47262     16908      4484     25870
+
+     Total     92.48    802007    741689     60318
+
+
+Undirected   Rate(%)     Total   Correct    Errors    SegErr     ClErr    RelErr
+---------------------------------------------------------------------------------
+     Nodes     65.80     38181     25125     13056
+Node Pairs     90.56    381913    345863     36050      8454      2242     25354
+
+     Total     88.31    420094    370988     49106
+
+     SegErr: merge/split   ClErr: valid merge class error   RelErr: relation error
+
+
+****  OBJECTS   **************************************************************************
+
+           Recall(%)   Prec(%) 2RP/(R+P)   Targets   Correct  FalseNeg *Detected *FalsePos
+------------------------------------------------------------------------------------------
+   Objects     82.38     79.60     80.96     27012     22252      4760     27956      5704
+ + Classes     67.84     65.55     66.67     27012     18324      8688     27956      9632
+ Class/Det     82.35                         22252     18324
+
+ Relations     60.74     59.24     59.98     24545     14909      9636     25165     10256
+ + Classes     57.50     56.08     56.78     24545     14113     10432     25165     11052
+ Class/Det     94.66                         14909     14113
+
+     2RP/(R+P): harmonic mean (f-measure) for (R)ecall and (P)recision
+     Class/Det: (correct detection and classification) / correct detection
+
+
+****  FILES  ***************************************
+
+             Rate(%)     Total   Correct    Errors
+---------------------------------------------------
+   Objects     42.85      2791      1196      1595
+ + Classes     14.26      2791       398      2393
+ Class/Det     33.28      1196       398          
+
+ Relations     26.44      2791       738      2053
+ + Classes     24.40      2791       681      2110
+ Class/Det     92.28       738       681          
+
+ Structure     26.44      2791       738      2053
+ + Classes     10.03      2791       280      2511    *Final
+ Class/Det     37.94       738       280          
+
+
+****  LABEL ERROR HISTOGRAM (Dir. Edges, D_B)  ****
+
+                   0         1         2         3         4         5        >5
+----------------------------------------------------------------------------------
+Num. Files       280       188       100        46       131        91      1955
+Cum. Files       280       468       568       614       745       836      2791
+
